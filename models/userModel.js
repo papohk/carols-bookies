@@ -39,7 +39,7 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  callbackURL: "https://carols-bookies-ppo.herokuapp.com//auth/google/books",
+  callbackURL: "https://carols-bookies-ppo.herokuapp.com/auth/google/books",
 },
 function(accessToken, refreshToken, email, cb) {
   console.log(email);
